@@ -9,7 +9,7 @@ namespace TimeTable207.Context.Contracts.Models
     /// <summary>
     /// 
     /// </summary>
-    internal class Putevka : BaseAuditEntity
+    public class Putevka : BaseAuditEntity
     {
         /// <summary>
         /// ОТКУДА БЕРЕМ  ДАННЫЕ

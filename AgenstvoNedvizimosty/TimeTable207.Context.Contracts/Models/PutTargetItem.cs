@@ -3,7 +3,7 @@
     /// <summary>
     /// О путевке 
     /// </summary>
-    internal class PutTargetItem
+    public class PutTargetItem
     {
         /// <summary>
         /// id

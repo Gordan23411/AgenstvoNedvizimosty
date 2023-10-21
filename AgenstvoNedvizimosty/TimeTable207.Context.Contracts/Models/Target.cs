@@ -3,7 +3,7 @@
     /// <summary>
     /// Инфа о путевке
     /// </summary>
-    internal class Target : BaseAuditEntity
+    public class Target : BaseAuditEntity
     {
         /// <summary>
         /// название путевки
