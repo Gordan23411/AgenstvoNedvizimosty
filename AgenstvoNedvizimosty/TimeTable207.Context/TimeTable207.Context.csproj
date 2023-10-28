@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TimeTable207.Context.Contracts\TimeTable207.Context.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>

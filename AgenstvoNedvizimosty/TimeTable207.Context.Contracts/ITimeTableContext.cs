@@ -7,7 +7,7 @@ using TimeTable207.Context.Contracts.Models;
 
 namespace TimeTable207.Context.Contracts
 {
-    internal class ITimeTableContext
+     public class ITimeTableContext
     {
         ICollection<Putevka> Putevkas { get;} = Array.Empty<Putevka>();
 
