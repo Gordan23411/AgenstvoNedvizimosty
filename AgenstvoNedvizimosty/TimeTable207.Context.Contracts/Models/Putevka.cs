@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TimeTable207.Context.Contracts.Models
+﻿namespace AgenstvoNedvizimosty.Context.Contracts.Models
 {
     /// <summary>
     /// 
@@ -20,10 +14,12 @@ namespace TimeTable207.Context.Contracts.Models
         /// ID ПУТЕВК
         /// </summary>
          public Guid TargetID { get; set; }
+
         /// <summary>
         /// ID ТУРИСТОВ
         /// </summary>
          public Guid TuristID { get; set;}
+
         /// <summary>
         /// ID ТУР ОПЕРАТОРОВ
         /// </summary>

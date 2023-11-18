@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TimeTable207.Context.Contracts.Models
+﻿namespace AgenstvoNedvizimosty.Context.Contracts.Models
 {
     public abstract class BaseAuditEntity
     {
@@ -17,14 +11,17 @@ namespace TimeTable207.Context.Contracts.Models
         /// когда создан
         /// </summary>
         public DateTimeOffset CreateAt { get; set; }
+
         /// <summary>
         /// кем создан
         /// </summary>
         public string CreateBy { get; set; } = string.Empty;
+
         /// <summary>
         /// когда создан
         /// </summary>
         public DateTimeOffset UpdateAt { get; set; }
+
         /// <summary>
         /// кем изменен 
         /// </summary>
@@ -35,11 +32,5 @@ namespace TimeTable207.Context.Contracts.Models
         /// дата удаления
         /// </summary>
         public DateTimeOffset? DeletedAt { get; set; }
-
-
-       
-
-
-
     }
 }
