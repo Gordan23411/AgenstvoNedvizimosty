@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TimeTable207.Context.Contracts\AgenstvoNedvizimosty.Context.Contracts.csproj" />
+  </ItemGroup>
+
+
+
 </Project>
