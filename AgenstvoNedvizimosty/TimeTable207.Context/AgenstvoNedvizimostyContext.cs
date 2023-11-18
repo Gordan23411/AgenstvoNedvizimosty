@@ -31,7 +31,7 @@ namespace AgenstvoNedvizimosty.Context
 
         public ICollection<Turist> Turists => turists;
 
-        ICollection<TurOper> IAgenstvoNedvizimostyContext.turOpers => turOpers;
+        public ICollection<TurOper> TurOper => turOpers;
 
         private void Seed()
         {
