@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\TimeTable207.Context.Contracts\AgenstvoNedvizimosty.Context.Contracts.csproj" />
+    <ProjectReference Include="..\TimeTable207.Context\AgenstvoNedvizimostyContext.csproj" />
   </ItemGroup>
 
 </Project>

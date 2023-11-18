@@ -8,7 +8,7 @@
         /// <summary>
         /// название путевки
         /// </summary>
-        public decimal namePut { get; set; }
+        public string namePut { get; set; }
 
         /// <summary>
         /// куда люди полетят 

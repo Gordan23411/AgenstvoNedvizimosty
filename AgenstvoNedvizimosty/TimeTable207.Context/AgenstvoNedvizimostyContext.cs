@@ -20,8 +20,7 @@ namespace AgenstvoNedvizimosty.Context
             targets = new HashSet<Target>();
             turists = new HashSet<Turist>();
             turOpers = new HashSet<TurOper>();
-
-            
+            Seed();
         }
 
         public ICollection<Putevka> Putevkas => putevkas ;
@@ -33,5 +32,52 @@ namespace AgenstvoNedvizimosty.Context
         public ICollection<Turist> Turists => turists;
 
         ICollection<TurOper> IAgenstvoNedvizimostyContext.turOpers => turOpers;
+
+        private void Seed()
+        {
+            turists.Add(new Turist
+            {
+                Id = Guid.NewGuid(),
+                NFO = "Криуленко Тимур Андреевич",
+                SeriesAndNomerPass = "26262521 7675",
+                email = "timur.kriulenko.10@mail.ru",
+                PhoneNumber = "+79817088150",
+            });
+
+            putTargetItems.Add(new PutTargetItem
+            {
+                Id = Guid.NewGuid(),
+                TargetID = Guid.NewGuid(),
+                Count = 32323,
+                Summ = 123,
+            });
+
+            targets.Add(new Target
+            {
+                Id = Guid.NewGuid(),
+                namePut = "Моё солнышко",
+                KudaAdress = "Саратов",
+                PriseHuman = 3000,
+            });
+
+            turists.Add(new Turist
+            {
+                Id = Guid.NewGuid(),
+                NFO = "Криуленко Тимур Андреевич",
+                SeriesAndNomerPass = "26262521 7675",
+                email = "timur.kriulenko.10@mail.ru",
+                PhoneNumber = "+79817088150",
+            });
+
+            turOpers.Add(new TurOper
+            {
+                Id = Guid.NewGuid(),
+                NameOper = "Николай Николай Николай",
+                UrAdress = "Туристкая 18",
+                FactAdress = "Туристкая 19",
+                INN = "499449492312",
+                OKPO = "47575675",
+            });
+        }
     }
 }
