@@ -1,5 +1,7 @@
 ﻿using AgenstvoNedvizimosty.Context;
+using AgenstvoNedvizimosty.Context.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace AgenstvoNedvizimosty.Api.Controllers
 {
@@ -7,12 +9,24 @@ namespace AgenstvoNedvizimosty.Api.Controllers
     [Route("[controller]")]
     public class PutevkaController : ControllerBase
     {
+        private readonly IAgenstvoNedvizimostyContext context;
+
+        public PutevkaController(IAgenstvoNedvizimostyContext context)
+        {
+            this.context = context;
+        }
         [HttpGet]
         public IActionResult GetAllPutevka() 
         {
-            var context = new AgenstvoNedvizimostyContext();
-            var turistlist = context.Turists.ToList();
+            var turistlist = context.Putevkas.ToList();
 
+            return Ok(turistlist);
+        }
+
+        [HttpGet("{id:guid}")]
+        public IActionResult Get(Guid id)
+        {
+            var turistlist = context.Putevkas.FirstOrDefault(x => x.Id == id);
             return Ok(turistlist);
         }
     }

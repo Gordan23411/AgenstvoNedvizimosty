@@ -27,6 +27,6 @@ namespace AgenstvoNedvizimosty.Context.Contracts
         /// <summary>
         /// данные операторов
         /// </summary>
-        ICollection<TurOper> turOpers { get; }
+        ICollection<TurOper> TurOpers { get; }
     }
 }

@@ -31,7 +31,7 @@ namespace AgenstvoNedvizimosty.Context
 
         public ICollection<Turist> Turists => turists;
 
-        public ICollection<TurOper> TurOper => turOpers;
+        public ICollection<TurOper> TurOpers => turOpers;
 
         private void Seed()
         {
@@ -77,6 +77,11 @@ namespace AgenstvoNedvizimosty.Context
                 FactAdress = "Туристкая 19",
                 INN = "499449492312",
                 OKPO = "47575675",
+            });
+            putevkas.Add(new Putevka
+            {
+                Id = Guid.NewGuid(),
+                
             });
         }
     }
